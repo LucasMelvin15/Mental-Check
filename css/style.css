@@ -75,6 +75,20 @@ a{
     text-align: center;
     padding: 3rem;
 }
+.hero{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.hero .hero-description{
+    padding: 8rem;
+    font-size: 3rem;
+    inline-size: 95%;
+}
+.hero img{
+    width: 500px;
+    padding: 8rem;
+}
 
 
 
@@ -132,6 +146,9 @@ a{
     }
     .nav-item{
         margin: 16px 0;
+    }
+    .hero{
+        flex-wrap: wrap;
     }
 }
 
