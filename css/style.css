@@ -82,11 +82,12 @@ a{
 }
 .hero .hero-description{
     padding: 8rem;
-    font-size: 3rem;
+    font-size: 2.2rem;
     inline-size: 95%;
+    width: 75%;
 }
 .hero img{
-    width: 500px;
+    width: 95%;
     padding: 8rem;
 }
 
@@ -149,6 +150,17 @@ a{
     }
     .hero{
         flex-wrap: wrap;
+    }
+    .hero .hero-description{
+        padding: 5rem;
+        font-size: 1.5rem;
+        inline-size: max-content;
+        width: 100%;
+    }
+    .hero img{
+        width: 98%;
+        padding: 5rem;
+        
     }
 }
 
