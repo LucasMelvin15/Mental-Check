@@ -24,10 +24,11 @@ html{
 header{
     position: fixed;
     top: 0; left: 0;
-    z-index: 1000;
+    z-index: 500;
     background:#fff ;
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
     width: 100%;
+    
 }
 .logo{
     color: var(--skyblue);
@@ -40,17 +41,27 @@ header{
     padding: 1rem;
     text-align: center;
 }
-header #menu{
+ .hamburger{
     font-size: 3rem;
     color: skyblue;
     cursor: pointer;
     margin: 1rem;
     display: none;
 }
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    color: var(--skyblue);
+}
  .navbar ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 3rem;
     list-style: none;
     padding: 1rem;
 }
@@ -108,37 +119,40 @@ header #menu{
         font-size: 55%;
         
     }
+    .hamburger{
+        display: block;
+    }
+    .hamburger .active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger .active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger .active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: .3s;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
 }
 @media (max-width:500px) {
     html{
         font-size: 50%;
         
     }
-    header #menu{
-        display: block;
-    }
-    header .navbar{
-        position: fixed;
-        top: 6.2rem; right: 0;
-        height: 100%; width: 100%;
-        border-top: .2rem solid rgba(0, 0, 0, .3);
-    }
-    header .navbar ul{
-        height: 100%; width: 100%;
-        flex-flow: column;
-        background: #fff;
-        padding-bottom: 15rem;
-    }
-    header .navbar ul li{
-        text-align: center;
-        width: 100%;
-        margin: 1rem 0;
-    }
-    header .navbar ul li a{
-        font-size: 4rem;
-        
-        display: block;
-    }
+
+    
 
    .hero{
        flex-wrap: wrap;
