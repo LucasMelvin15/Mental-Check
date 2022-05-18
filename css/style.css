@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600;700&display=swap');
+   :root{
+       --skyblue:skyblue ;
+   }
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+*::selection{
+    background: var(--skyblue);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    background:#fff ;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+    width: 100%;
+}
+.logo{
+    color: var(--skyblue);
+    font-size: 4rem;
+    
+}
+ .heading{
+    font-size: 3rem;
+    color: #666;
+    padding: 1rem;
+    text-align: center;
+}
+header #menu{
+    font-size: 3rem;
+    color: skyblue;
+    cursor: pointer;
+    margin: 1rem;
+    display: none;
+}
+ .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem;
+}
+.navbar ul li{
+    margin: 0 1.5rem;
+}
+.navbar ul li a{
+    font-size: 2rem;
+    color: var(--skyblue);
+
+}
+.navbar ul li a:hover{
+    color: burlywood;
+    
+}
+
+.hero{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    padding-top: 3rem;
+    width: 98%;
+    height: 100%;
+
+}
+.heroo{
+    font-size: 3rem;
+    margin: 4rem;
+    padding: 3rem;
+    inline-size: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:768px) {
+    html{
+        font-size: 55%;
+        
+    }
+}
+@media (max-width:500px) {
+    html{
+        font-size: 50%;
+        
+    }
+    header #menu{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top: 6.2rem; right: 0;
+        height: 100%; width: 100%;
+        border-top: .2rem solid rgba(0, 0, 0, .3);
+    }
+    header .navbar ul{
+        height: 100%; width: 100%;
+        flex-flow: column;
+        background: #fff;
+        padding-bottom: 15rem;
+    }
+    header .navbar ul li{
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    header .navbar ul li a{
+        font-size: 4rem;
+        
+        display: block;
+    }
+
+   .hero{
+       flex-wrap: wrap;
+   }
+}
