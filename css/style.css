@@ -124,6 +124,10 @@ a{
       color: var(--skyblue);
       padding-top: 10px;
   }
+  .swiper-slide h4 a{
+      color: var(--skyblue);
+      font-size: 12px;
+  }
   .swiper-slide p{
       color:#003366;
       font-size: 15px;
