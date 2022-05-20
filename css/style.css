@@ -135,6 +135,93 @@ a{
 
 
 
+  /* footer section */
+
+  .footer{
+      margin-top: 100px;
+      background-color: #003366;
+      padding-top: 50px;
+
+  }
+  .footer .box-container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .footer .box-container .box{
+      margin: 2rem;
+      flex: 1 1 30rem;
+
+  }
+  .footer .box-container .box h4{
+      font-size: 2.5rem;
+      color: white;
+  }
+  .footer .box-container .box p{
+      font-size: 1.4rem;
+      color: white;
+    
+  }
+  .footer .box-container .box .fa-brands{
+      font-size: 3rem;
+      letter-spacing: 1.2rem;
+      padding: 1.2rem;
+      color: white;
+  }
+  .footer .box-container .box .fa-brands:hover{
+      color: black;
+  }
+  .footer .box-container .box a{
+    font-size: 1.8rem;
+    color: white;
+    padding-left: 3rem;
+    display: block;
+}
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+.footer .box-container .newsletter{
+    padding-left: 35rem;
+    
+    
+}
+.footer .box-container  form{
+      align-items: center;
+    display: flex;
+    align-items: center;
+}
+.footer .box-container form .email {
+    height: 4rem;
+    width: 50%;
+    font-size: 1.7rem;
+    padding: 0 1rem;
+}
+.footer .box-container form .btn{
+    margin-top: 1rem;
+    width: 25%;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 45%;
+}
+
+.footer .box-container form .btn:hover{
+    color: #003366;
+    background-color: red;
+}
+.footer .credit{
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.footer .credit h3 a{
+    font-size: .5remrem;
+    font-weight: normal;
+}
+
+
 
 
 
@@ -202,6 +289,9 @@ a{
         padding: 5rem;
         
     }
+    .footer .box-container .newsletter{
+       padding-top: -10rem;
+  }
 }
 
 

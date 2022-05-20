@@ -28,7 +28,6 @@ var swiper = new Swiper(".mySwiper", {
       modifier: 1,
       slideShadows: true,
     },
-    pagination: {
-      el: ".swiper-pagination",
-    },
+    
+    
   });
