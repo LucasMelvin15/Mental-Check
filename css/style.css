@@ -96,6 +96,7 @@ a{
    text-align: center;
    font-size: 20px;
    padding-top: 2rem;
+   padding-bottom: 1.4rem;
    
 }
 
@@ -132,6 +133,33 @@ a{
       color:#003366;
       font-size: 15px;
   }
+  /*story section*/
+  .story{
+      padding-top: 5rem;
+      background-color: #89CFF0;
+      display: flex;
+      
+      align-items: center;
+      justify-content: center;
+  }
+  .story .story-description{
+    padding: 5rem;
+    font-size: 2rem;
+    inline-size: 95%;
+    width: 90%;
+    color:#003366;
+    font-weight: normal;
+}
+.story .story-description a{
+    color: #003366;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+.story img{
+    width: 400px;
+    height: 350px;
+    padding: 5rem;
+}
 
 
 
@@ -195,13 +223,14 @@ a{
     width: 50%;
     font-size: 1.7rem;
     padding: 0 1rem;
+    margin-top: 1rem;
 }
 .footer .box-container form .btn{
     margin-top: 1rem;
-    width: 25%;
+    width: 30%;
     height: 4rem;
     font-size: 2rem;
-    border-radius: 45%;
+    
 }
 
 .footer .box-container form .btn:hover{
