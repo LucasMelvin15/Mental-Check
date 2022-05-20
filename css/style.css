@@ -127,13 +127,20 @@ a{
   }
   .swiper-slide h4 a{
       color: var(--skyblue);
-      font-size: 14px;
+      font-size: 12px;
+      font-weight: lighter;
   }
   .swiper-slide p{
       color:#003366;
       font-size: 15px;
   }
   /*story section*/
+  .story-heading{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 3rem;
+    padding-bottom: 1.4rem;
+  }
   .story{
       padding-top: 5rem;
       background-color: #89CFF0;
@@ -316,6 +323,14 @@ a{
     .hero img{
         width: 98%;
         padding: 5rem;
+        
+    }
+    .story{
+        flex-wrap: wrap;
+    }
+    .story .story-description{
+        padding-top: 2rem;
+        margin-top: 5px;
         
     }
     .footer .box-container .newsletter{
