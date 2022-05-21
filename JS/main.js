@@ -31,3 +31,8 @@ var swiper = new Swiper(".mySwiper", {
     
     
   });
+
+  //swiper about page starts
+
+  
+  //swiper about page ends
