@@ -170,7 +170,7 @@ a{
 /*about page  starts*/
 .about-heading{
     text-align: center;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
 }
 .about {
     padding-top: 2rem;
@@ -199,6 +199,7 @@ a{
     font-size:1.1rem ;
     color: black;
     text-decoration: underline;
+    padding-bottom: 1.5rem;
     
 }
  .content a:hover{
@@ -209,6 +210,8 @@ a{
 }
 .disclaimer-heading h3{
     text-align: center;
+    color: red;
+    font-size: 1.3rem;
 }
 .disclaimer-content p{
     font-size:1.5rem ;
